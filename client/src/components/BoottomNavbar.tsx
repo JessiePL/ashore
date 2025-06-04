@@ -13,8 +13,8 @@ export default function BottomNavbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="navbar fixed-bottom bg-light border-top shadow-sm">
-      <div className="container d-flex justify-content-around">
+    <nav className="navbar fixed-bottom bg-light border-top shadow shadow-lg py-4">
+      <div className="container d-flex justify-content-around fs-4">
         {navItems.map((item) => (
           <Link
             key={item.href}
