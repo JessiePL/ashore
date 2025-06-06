@@ -11,6 +11,9 @@ export default function TopNavbar() {
             height={64}
             className="rounded-circle"
           />
+          <div className="position-absolute top-50 start-50 translate-middle">
+          <span className="ms-3 fs-4 fw-bold text-dark">Ashore</span>
+          </div>
         </a>
       </div>
     </nav>

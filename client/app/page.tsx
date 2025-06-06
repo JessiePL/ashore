@@ -1,5 +1,7 @@
 //app/home/page.tsx
-export default function HomePage()
+'use client';
+
+export default function IndexPage()
 {
-          return <h1>Welcome to Home</h1>;
+          return <h1>Welcome!</h1>;
 }
