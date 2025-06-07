@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import '@/styles/navbar.css';
 import { usePathname } from 'next/navigation';
 
 const navItems = [
@@ -13,7 +14,7 @@ export default function BottomNavbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="navbar fixed-bottom bg-light border-top shadow shadow-lg py-4">
+    <nav className="bottom-navbar navbar fixed-bottom bg-light border-top shadow shadow-lg py-4">
       <div className="container d-flex justify-content-around fs-4">
         {navItems.map((item) => (
           <Link

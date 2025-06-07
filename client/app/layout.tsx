@@ -9,7 +9,9 @@ export default function RootLayout({children}: { children : React.ReactNode})
                     <html lang="en">
                               <body>
                                         <TopNavbar />
+                                        <main style={{ paddingTop: '20px', paddingBottom: '20px' }}>
                                         {children}
+                                        </main>
                                         <BottomNavbar />
                               </body>
                     </html>

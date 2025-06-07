@@ -1,28 +1,26 @@
 'use client';
+import React from 'react'
+import { Canvas } from '@react-three/fiber'
+import { OrbitControls } from '@react-three/drei'
+import GrowingVine from '@/components/GrowingVine'
 
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
-
-// TreePage renders a 3D canvas with a glowing emoji-like sphere
-export default function TreePage() {
+export default function App() {
   return (
-    <div style={{ height: '100vh', backgroundColor: '#eef' }}>
-      <Canvas camera={{ position: [0, 0, 5] }}>
-        {/* Ambient light for soft overall lighting */}
-        <ambientLight intensity={0.5} />
-
-        {/* Point light to give directional lighting */}
-        <pointLight position={[10, 10, 10]} />
-
-        {/* 3D sphere to represent a mood bubble */}
-        <mesh>
-          <sphereGeometry args={[1, 32, 32]} />
-          <meshStandardMaterial color="lightblue" />
-        </mesh>
-
-        {/* Enable orbit controls to allow mouse interaction */}
-        <OrbitControls />
-      </Canvas>
-    </div>
-  );
+    <Canvas 
+    camera={{ position: [0, 0, 20], fov: 45 }}
+    style={{
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    height: '100vh',
+    width: '100vw',
+    zIndex: 0,
+    background: 'transparent'
+  }}
+  >
+      <ambientLight intensity={0.5} />
+      <pointLight position={[0, 0, 0]} />
+      <GrowingVine />
+    </Canvas>
+  )
 }

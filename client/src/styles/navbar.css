@@ -1,0 +1,21 @@
+/* navbar.css */
+
+.top-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 10;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 10;
+  background-color: white;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
